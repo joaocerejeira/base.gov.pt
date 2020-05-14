@@ -20,6 +20,13 @@ And then run the desired spider:
 
     scrapy crawl get_contracts
 
+If you want to stop and then continue run [in windows press shift and right mouse button o open the shell]
+
+   scrapy crawl get_contracts -s JOBDIR=crawls
+
+To stop ctrl C; to restart -> scrapy crawl get_contracts -s JOBDIR=crawls
+
+
 This will generate the following files:
 
  - `contracts.csv` - main table, containing the most important info regarding
